@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: roboto,sans-serif;
+    background-image: url(bg.jpg);
+}
+
+.container{
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60px auto 50px;
+}
+header{
+    background-color: rgb(217, 217, 217);
+    grid-column:1/4;
+    grid-row: 1/2;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    margin-top: 10px;
+    margin-left: 50px;
+    color: rgb(62, 62, 62);
+}
+nav ul{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    margin-right: 45px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    border-radius: 2px;
+}
+nav ul li a:hover{
+    background-color:rgba(50, 50, 50, 0.3);
+    border-radius: 2px;
+}
+aside{
+    background-color: rgb(59, 58, 58);
+    grid-column:1/2;
+    grid-row: 2/3;
+    border-radius: 2px;
+    border: 2px solid gainsboro;
+}
+aside .post{
+    margin: 20px 25px;
+}
+aside .post h1{
+    color: azure;
+    margin-bottom: 15px;
+}
+aside .post ul{
+    list-style: none;
+}
+aside .post ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgba(246, 242, 242, 0.923);
+    line-height: 30px;
+}
+main{
+    background-color: rgba(245, 246, 250);
+    grid-column:2/4;
+    grid-row: 2/3;
+    padding: 20px;
+}
+main .blog-post{
+    margin: 20px 0;
+    box-shadow: 0 4px 10px grey;
+    padding: 5px 15px;
+}
+main .blog-post .meta h3{
+    color: grey;
+}
+main .blog-post .last-post img{
+    max-width: 728px;
+    margin: 10px 0;
+}
+main .blog-post .last-post p{
+    margin-bottom: 10px;
+}
+footer{
+    background-color: rgb(217, 217, 217);
+    grid-column:1/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px gainsboro;
+}

@@ -1,0 +1,72 @@
+.container{
+    width: 800px;
+    height: 600px;
+    background-color: aquamarine;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 18px double burlywood;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px 10px;
+}
+.item1{
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/3;
+    margin-top:10px;
+    margin-left: 10px;
+}
+.item2{
+    background-image: url(img6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/3;
+    grid-column: 2/4;
+    margin-top:10px;
+}
+.item3{
+    background-image: url(img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/5;
+    grid-column: 4/6;
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+.item4{
+    background-image: url(img7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 3/5;
+    grid-column: 1/3;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.item5{
+    background-image: url(img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 3/5;
+    grid-column: 3/4;
+    margin-bottom: 10px;
+}
+.item{
+    border: 3px solid white;
+    box-shadow: 0 3px 10px cyan;
+    transition: transform linear 0.2s;
+}
+.item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 3px 15px rgba(0, 255, 255, 0.242);;
+}
+

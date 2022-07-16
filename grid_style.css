@@ -1,0 +1,46 @@
+.container{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(170, 252, 252);
+    margin: auto;
+    /* Kích hoạt grid template */
+    display: grid;
+    /* Dựng cột cho grid template */
+    grid-template-columns: 200px 100px 300px 100px;
+    /* Điều chỉnh khoảng cách cột */
+    column-gap: 10px;
+    /* Dựng hàng cho grid */
+    grid-template-rows: 100px 200px;
+    /* Điều chỉnh khoản cách hàng */
+    row-gap: 15px;
+    /* Điều chỉnh khoản cách cả hàng và cột */
+    gap: 10px 20px;
+}
+.box1{
+    background-color: red;
+    /* Thay đổi số cột chiếm hữu của phần tử */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box2{
+    background-color: green;
+    /* Thay đổi số hàng chiếm hữu của phần tử */
+}
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: yellow;
+}
+.box5{
+    background-color: orange;
+}
+.box6{
+    background-color: pink;
+}
+.box7{
+    background-color: purple;
+}
+.box8{
+    background-color: white;
+}
